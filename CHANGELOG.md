@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 1.5.1 (June 12, 2024)
+* Fix: Replaced `open` with `io.open` for better compatibility.
+
+
 ## Version 1.5.0 (October 30, 2021)
 * Enhancement: Add support for Maya 2022 with Python 3.7. (@artbycrunk in [issues/25](https://github.com/artbycrunk/vscode-maya/issues/25))
 
