@@ -290,7 +290,7 @@ export function activate(context: vscode.ExtensionContext) {
 			nativePath = path.join(os.tmpdir(), "MayaCode.py");
 			posixPath = nativePath.replace(/\\/g, "/");
 			if(config.get('runner.latest')){
-				cmd = `python("exec(open('${posixPath}').read())")`;
+				cmd = `python("import io;exec(io.open('${posixPath}', encoding='utf8').read())")`;
 			}else{
 				cmd = `python("execfile('${posixPath}')")`;
 			}
